@@ -1,0 +1,87 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.login{
+    border: 3px solid #000;
+    box-shadow: 5px 5px 10px 7px black;
+    height: 520px; width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 120px auto;
+}
+.login:hover{
+    box-shadow: -2px -2px 10px 3px black;
+    transition:  ease-in-out 0.3s;
+}
+.lf{
+    width: 400px;
+}
+.lem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 24px;
+    
+}
+.lpa{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.lva{
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 70px;
+    text-decoration: none;
+}
+.lva:hover{
+    text-decoration: underline rgb(0, 0, 0);
+}
+.valid{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 105px;
+    color: black;
+}
+.em{
+    font-size: 30px;
+}
+.emi{
+    font-size: 15px;
+    width: 300px;
+    margin-top: 30px;
+
+}
+.pa{
+    font-size: 30px;
+
+}
+.pai{
+    margin-top: 30px;
+    font-size: 15px;
+    width: 300px;
+
+}
+.ppa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.er{
+    margin-top: 70px;
+    margin-left: 110px;
+    width: 200px;
+    font-size: 20px;
+    color: red;
+}

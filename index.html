@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Bank</title>
+</head>
+<body>
+    <div class="allh">
+        <div class="hdr">
+            <div class="lgd">
+            <h2 class="logo">
+                IBANK 
+            </h2>
+        </div>
+        <div class="nav">
+            <div class="bts">
+                <h2 class="bt">Main</h2>
+                <h2 class="bt">History</h2>
+                <h2 class="bt"><a href="#konect">Card</a></h2>
+                <h2 class="bto">Deposit</h2>
+            </div>
+        </div>
+        <div class="ac">
+            <img class="acs" width="50" height="50" src="https://img.icons8.com/ios/50/000000/user-male-circle--v1.png" alt="user-male-circle--v1"/>
+         </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card">
+            
+
+    <dialog class="modal">
+        <h4 class="mtext">Заявку відправлено!</h4>
+      <button class="close" onclick="document.querySelector('.modal').close()">X</button>
+    </dialog>
+
+            <div class="user">
+                <h3 class="utm">Card holder name :</h3>
+                <h3 class="ut" id="NELEMENT">Дмитро Волошин</h3>
+            </div>
+            <div class="details">
+                <h3 class="dtm">Card number :</h3>
+                <h3 class="dt" id="СElement">5375 4114 2243 9344</h3>
+                <div class="sec">
+                    <h3 class="dd" id="S">CCV : <span class="dds" id="randomDigits"></span></h3>
+                    <h3 id="date-display" class="dd1"></h3>
+                </div>
+                
+                    <div class="partner">
+                        <div class="ms">
+                            <svg class="ml" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 152.4 108" style="enable-background:new 0 0 152.4 108;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:none;}
+                .st1{fill:#FF5F00;}
+                .st2{fill:#EB001B;}
+                .st3{fill:#F79E1B;}
+            </style>
+            <g>
+                <rect y="0" class="st0" width="152.4" height="108"/>
+                <g>
+                    <rect x="60.4" y="25.7" class="st1" width="31.5" height="56.6"/>
+                    <path class="st2" d="M62.4,54c0-11,5.1-21.5,13.7-28.3c-15.6-12.3-38.3-9.6-50.6,6.1C13.3,47.4,16,70,31.7,82.3
+                        c13.1,10.3,31.4,10.3,44.5,0C67.5,75.5,62.4,65,62.4,54z"/>
+                    <path class="st3" d="M134.4,54c0,19.9-16.1,36-36,36c-8.1,0-15.9-2.7-22.2-7.7c15.6-12.3,18.3-34.9,6-50.6c-1.8-2.2-3.8-4.3-6-6
+                        c15.6-12.3,38.3-9.6,50.5,6.1C131.7,38.1,134.4,45.9,134.4,54z"/>
+                </g>
+            </g>
+            </svg>
+            
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="start">
+            <h2 class="st">Open Card</h2>
+        </div>
+        <div class="opencard" id="konect">
+            <div class="numb">
+                <h4 class="gt1">Згенеруй номер карти</h4>
+                <input class="inp" type="opt" id="inputText" oninput="changeText(this.value)">
+                <button class="gen" onclick="generateRandomNumber()">Generate number</button>
+            </div>
+            <h4 class="gt2">Введи свої дані</h4>
+            <div class="name">  
+                <input class="nt"  type="text" placeholder="Name Surname" id="inputText" required oninput="changeNText(this.value)">
+            </div>
+            <div class="datei">
+                <h4 class="gt3">Термін дійсності карти</h4>
+                <input class="dit" type="month" id="date-input" onchange="updateDateDisplay()">
+            </div>
+            <div class="ccv">
+                <h4 class="gt3">Згенеруй CCV карти</h4>
+                <button class="gen1" onclick="generateRandomNumber1()">Generate CCV</button>
+            </div>
+            <button class="gt4" onclick="document.querySelector('.modal').showModal()">Оформити карту</button>
+
+        </div>
+
+    </div>
+
+    <a  href="https://icons8.com/icon/7820/account"></a>
+    <script src="/scrypt.js"></script>
+</body>
+</html>
